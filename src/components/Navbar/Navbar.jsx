@@ -64,7 +64,7 @@ const NavBar = () => {
         </button>
         {displayOnClick && (
           <>
-            <div className="dropOnClick flex-gap-10 p-10">
+            <div className="dropOnClick flex-gap-10 p-10 ml">
               <div className="selectGroup flex-sb">
                 <span style={{ fontSize: "14px", color: "#555B5A" }} >Grouping</span>
                 <select

@@ -16,14 +16,24 @@
     width: 100%;
 }
 
-.showStatus {
+.cardTitle {
+    display: flex;
+    align-items: start;
+}
+
+.imageAndstatus{
+    display: flex;
+    align-items: end;
+    padding-right: 5px;
+}
+
+.showStatus { 
+    width: 8px;
+    height: 8px;
+    margin-left: 20px;
     position: absolute;
-    right: 0;
     background: rgb(34, 255, 1);
-    border-radius: 50%;
-    bottom: 0;
-    width: 10px;
-    height: 10px;
+    border-radius: 50%;   
 }
 
 .tags {
