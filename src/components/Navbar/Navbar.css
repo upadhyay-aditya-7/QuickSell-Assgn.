@@ -24,7 +24,11 @@
     background: #ffffff;
     border: 2px solid #c1c1c1;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 }
+
 
 .selectStyle {
     width: 100px;
