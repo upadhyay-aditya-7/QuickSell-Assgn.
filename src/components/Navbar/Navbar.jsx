@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TiThList } from "react-icons/ti";
-import "./NavBar.css";
+import "./Navbar.css";
 import { useSelector, useDispatch } from "react-redux";
 import { selectData } from "../../Actions/DataAction";
 localStorage.setItem("group", "status");

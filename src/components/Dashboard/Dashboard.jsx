@@ -11,7 +11,7 @@ import {
   BsFillExclamationSquareFill,
   BsFillCheckCircleFill,
 } from "react-icons/bs";
-import "./DashBoard.css";
+import "./Dashboard.css";
 import Card from "../Card/Card";
 const DashBoard = () => {
   const isStatus = localStorage.getItem("group") === "status";
