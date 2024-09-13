@@ -151,6 +151,7 @@ const DashBoard = () => {
                 {element[index]?.value?.map((element, ind) => {
                   return (
                     <Card
+                      key={ind}
                       id={element.id}
                       title={element.title}
                       tag={element.tag}
@@ -167,10 +168,9 @@ const DashBoard = () => {
           <>
             <div className="dashCardHeading flex-sb">
               <div
-                className="leftView"
+                className="leftView mt"
                 style={{
                   fontSize: "15px",
-                  marginRight: "90px",
                   wordSpacing: "4px",
                 }}
               >
@@ -199,24 +199,24 @@ const DashBoard = () => {
                     fontSize: "13px",
                     color: "#8F9997",
                     marginLeft: "10px",
+                    marginRight: "65px"
                   }}
                 >
                   0
                 </span>
               </div>
-              <div className="rightView">
-                <Add style={{ width: "15px" }} />{" "}
-                <span style={{ letterSpacing: "2px" }}>
-                  <ThreeDotMenu style={{ width: "15px" }} />
-                </span>
-              </div>
+              {/* <div className="rightView" style={{marginLeft: "60px"}}>
+                  <Add style={{ width: "15px" }} />{" "}
+                  <span style={{ letterSpacing: "2px" }}>
+                    <ThreeDotMenu style={{ width: "15px" }} />
+                  </span>
+                </div> */}
             </div>
             <div className="dashCardHeading flex-sb">
               <div
-                className="leftView"
+                className="leftView mt"
                 style={{
                   fontSize: "15px",
-                  marginRight: "60px",
                   wordSpacing: "4px",
                 }}
               >

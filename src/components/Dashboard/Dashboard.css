@@ -1,6 +1,6 @@
 .dashContainer {
     display: flex;
-    align-items: flex-start;
+    align-items: start;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 1.5%;
@@ -23,7 +23,7 @@
   .dashCardHeading {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
   }
 
   .imageandstatus {
@@ -43,28 +43,35 @@
 }
   
   /* Responsive styles */
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1150px) {
     .dashCardContainer {
-      width: 30%;
+      width: 30% !important;
+      margin: 10px;
+      gap: 20px !important;
       /* Adjust the width based on your design */
+    }
+
+    .mt{
+      margin-top: 20px;
     }
   }
   
   @media screen and (max-width: 768px) {
     .dashCardContainer {
-      width: 45%;
+      width: 45% !important;
+      margin: 10px;
+      gap: 20px !important;
       /* Adjust the width based on your design */
+    }
+
+    .mt {
+      margin-top : 10px;
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     .dashCardContainer {
-      width: 100%;
+      width: 80% !important;
       /* Full width on smaller screens */
-    }
-  
-    .dashCardHeading {
-      flex-direction: column;
-      align-items: flex-start;
     }
   }

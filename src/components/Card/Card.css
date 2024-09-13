@@ -32,7 +32,7 @@
     height: 8px;
     margin-left: 20px;
     position: absolute;
-    background: rgb(34, 255, 1);
+    background: #D3D3D3;
     border-radius: 50%;   
 }
 
@@ -54,9 +54,9 @@
     /* Allow tags to wrap to the next line on smaller screens */
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .cardContainer {
-        padding: 5%;
-        /* Adjusted padding for larger screens */
+        padding: 3% !important;
+        margin: 10px;
     }
 }

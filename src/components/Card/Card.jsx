@@ -24,6 +24,7 @@ const Card = ({ id, title, tag, status, priority }) => {
   const getStatusIndex = (status) => {
     return statusOrder.indexOf(status);
   };
+  console.log(getStatusIndex);
   return (
     <div className="cardContainer flex-gap-10" style={{ gap: "5px" }}>
       <div className="cardHeading flex-sb">
@@ -35,7 +36,7 @@ const Card = ({ id, title, tag, status, priority }) => {
         </span>}
         {!user && <div
           className="imageContainer relative"
-          style={{ width: "38px", height: "38px" }}
+          style={{ width: "38px", height: "38px", marginLeft: "auto", }}
         >
           <div className="imageAndstatus">
           <img
@@ -46,7 +47,7 @@ const Card = ({ id, title, tag, status, priority }) => {
           <div className="showStatus"></div>
           </div>
         </div>}
-      </div>
+      </div> 
       <div className="cardTitle" style={{ fontWeight: 200 }}>
         {!isStatus &&
           (
